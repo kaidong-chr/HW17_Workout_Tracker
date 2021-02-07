@@ -1,5 +1,7 @@
+// We require path so we can work with file paths
 const path = require("path");
 
+// Our html routes
 module.exports = function (app) {
     app.get("/", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/index.html"));
@@ -9,6 +11,8 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, "../public/stats.html"));
     });
 
-
+    app.get("/exercise", (req, res) => {
+        res.sendFile(path.join(__dirname, "../public/exercise.html"));
+    });
 
 }
