@@ -13,30 +13,17 @@ const workoutSchema = new Schema(
         type: {
           type: String,
           trim: true,
-          required: "Enter in a type of exercise",
         },
         name: {
           type: String,
           trim: true,
-          required: "Enter in an exercise",
         },
-        duration: {
-          type: Number,
-          required: "Enter in the duration minutes",
+        duration: Number,
+        weight: Number,
+        reps: Number,
+        sets: Number,
+        distance: Number
         },
-        weight: {
-          type: Number,
-          required: "Enter in body weight",
-        },
-        reps: {
-          type: Number,
-          required: "Enter in number of reps",
-        },
-        sets: {
-          type: Number,
-          required: "Enter in number of sets",
-        },
-      },
     ],
   },
   {
@@ -48,7 +35,6 @@ const workoutSchema = new Schema(
 
 workoutSchema.virtual("totalDuration").get(function () {
   return this.exercises.reduce((total, exercise) => {
-    console.log(total, exercise);
     return total + exercise.duration;
   }, 0);
 });
