@@ -25,7 +25,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
 });
 
 // Routes
-// Add routes later
+
+require("./routes/htmlRoutes")(app);
 
 // Start the server
 app.listen(PORT, () => {
