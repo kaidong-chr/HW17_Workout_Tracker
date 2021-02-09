@@ -27,8 +27,8 @@ Appointment scheduler for your pet's grooming needs. Utilizing passport authenti
 
 ### Demo
 🎥<br /> 
-[Spas For Paws Live Link](https://spas-for-paws.herokuapp.com/)
-<img src="public\assets\img\paws.gif" width="1000"><br />
+[Workout Tracker Live Link](https://workout-tracker-kai.herokuapp.com/)
+<img src="public\assets\img\workout.gif" width="1000"><br />
 <p align="center">
     <img src="https://img.shields.io/badge/JavaScript-blue" />
     <img src="https://img.shields.io/badge/-node.js-green" />
@@ -39,15 +39,17 @@ Appointment scheduler for your pet's grooming needs. Utilizing passport authenti
 
 ### Prerequisites 
 🔨<br />
-  1. mySQL work bench
+  1. mongoDB / Compass
   2. VS Code
   3. npm packages: express, dotenv, mongoose, morgan.
 
 ### Usage
 💻<br />
-In mySQL workbench, setup the database using schema.sql.<br />
-In VS Code terminal, install the npm dependencies, then use <i>node server.js</i> to run the app in the terminal.<br />
+In VS Code terminal, install the npm dependencies, then run <i>node server.js</i> in the terminal to start the app and create the workout database.<br />
+You can choose to seed the database by running <i>node seeders/seed.js</i> in the terminal<br />
 In a browser, navigate to http://localhost:8080/ to view the site.<br />
+You can create new workouts, or continue to add on to previous workouts.<br />
+YOu can view dashboard to see graph and pie charts of your workouts.<br />
 
 ### Installation
 💾<br />
