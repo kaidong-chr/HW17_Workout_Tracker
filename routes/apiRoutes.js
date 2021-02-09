@@ -15,9 +15,9 @@ module.exports = function (app) {
         });
     });
 
-    // Get our workouts for range
+    // Get our workouts for range, limited to 7 days
     app.get("/api/workouts/range", (req, res) => {
-        Workout.find({})
+        Workout.find({}).limit(7)
         .then((data) => {
             res.json(data);
         })
