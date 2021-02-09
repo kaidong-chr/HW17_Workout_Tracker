@@ -13,7 +13,7 @@
 
 ### Overview
 🔍<br />
-Appointment scheduler for your pet's grooming needs. Utilizing passport authentication, FullCalendar for drag and drop services planner, sequelize ORM, express handlebars layouts and more. 
+Workout tracking app to keep tally of workouts and display data in a dashboard format. Utilizing mongoose to create mongoDB collection then using api and html routes to interact and build our front-end.
 
 ### Table of Contents
 📑<br />
@@ -41,7 +41,7 @@ Appointment scheduler for your pet's grooming needs. Utilizing passport authenti
 🔨<br />
   1. mongoDB / Compass
   2. VS Code
-  3. npm packages: express, dotenv, mongoose, morgan.
+  3. npm packages: express, dotenv, morgan, mongoose.
 
 ### Usage
 💻<br />
@@ -49,12 +49,12 @@ In VS Code terminal, install the npm dependencies, then run <i>node server.js</i
 You can choose to seed the database by running <i>node seeders/seed.js</i> in the terminal<br />
 In a browser, navigate to http://localhost:8080/ to view the site.<br />
 You can create new workouts, or continue to add on to previous workouts.<br />
-YOu can view dashboard to see graph and pie charts of your workouts.<br />
+You can view dashboard to see graph and pie charts of your workouts.<br />
 
 ### Installation
 💾<br />
 ```
-npm install express dotenv mongoose morgan
+npm install express dotenv morgan mongoose 
 ```
 
 ### Questions

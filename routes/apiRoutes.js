@@ -7,7 +7,7 @@ module.exports = function (app) {
     app.get("/api/workouts", (req, res) => {
         Workout.find({})
         .then((data) => {
-            console.log("Get Last Workout",data);
+            console.log("Get Last Workout", data);
             res.json(data);
         })
         .catch((err) => {
@@ -31,7 +31,7 @@ module.exports = function (app) {
         console.log(body)
         Workout.create(body)
           .then((data) => {
-              console.log("Post route",data)
+              console.log("Post route", data)
             res.json(data);
           })
           .catch((err) => {
